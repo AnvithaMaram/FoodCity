@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/starting"
+    app:startDestination="@id/welcomepage">
+    <fragment
+        android:id="@+id/welcomepage"
+        android:name="com.example.foodcity.Welcomepage"
+        android:label="fragment_welcomepage"
+        tools:layout="@layout/fragment_welcomepage" >
+        <action
+            android:id="@+id/action_welcomepage_to_login_Signup_page"
+            app:destination="@id/login_Signup_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/login_Signup_page"
+        android:name="com.example.foodcity.Login_Signup_page"
+        android:label="fragment_login__signup_page"
+        tools:layout="@layout/fragment_login__signup_page" />
+</navigation>
